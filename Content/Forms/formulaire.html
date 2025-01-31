@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>QUIZZ MyGoal</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <!-- Ajout des liens avec les scripts -->
+    <link rel="shortcut icon" type="image/png" href="../../Images/logo3.png"/>
+    <link rel="stylesheet" href="../../Styles/style_formulaire.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" type="application/javascript"></script>
+    <script type="application/javascript" src="../../Javascript/quizz.js" defer></script>
+
+
+</head>
+<body>
+
+<div class="bloc">
+    <video src="../../Images/Foot-video.mp4" autoplay="autoplay" muted="" loop="infinity"></video>
+
+    <div class="navbar" id="enhaut">
+
+        <img src="../../Images/logo3.png" alt="logo du site" class="logo"/>
+        <ul>
+            <li><a href="../../index.xhtml">ACCEUIL</a></li>
+            <li><a href="formulaire.html">QUIZZ</a></li>
+            <li><a href="livreDor.html.html">LIVRE D'OR</a></li>
+            <li><a href="maintenance.html"><span>PREMIUM</span></a></li>
+        </ul>
+
+    </div>
+
+    <article class="main">
+
+        <h1>QUIZZ MyGoal</h1> <br>
+
+
+        <form action="http://voca2.univ-poitiers.fr/~subrenat/cours_web/traitement.php" name="quizz" id="quizz" method="post">
+            <fieldset class="identity">
+                <legend>Votre identité</legend>
+
+                <script language="JavaScript">
+                    var now = new Date();
+
+                    var annee = now.getFullYear();
+                    var mois = now.getMonth() + 1;
+                    var jour = now.getDate();
+                    var heure = now.getHours();
+                    var minute = now.getMinutes();
+                    var seconde = now.getSeconds();
+
+
+                    document.write("Date de connexion à la page : ");
+                    document.write(jour + "/" + mois + "/" + annee + " ");
+                    document.write(" à " + heure + ":" + minute + ":" + seconde);
+                </script>
+
+                <p>
+                    <label for="nom"><strong>Nom : </strong></label>
+                    <input id="nom" type="text"/>
+                </p>
+
+                <p>
+                    <label for="prenom"><strong>Prénom : </strong></label>
+                    <input id="prenom" type="text"/>
+                </p>
+
+                <p>
+                    <label for="age"><strong>Age : </strong></label>
+                    <input id="age" type="number"/>
+                </p>
+
+
+            </fieldset>
+
+            <hr/>
+
+            <fieldset class="choixmultiple">
+                <legend>Choisisez la réponse qui vous semble correct :</legend>
+
+                <ul>
+                    <li>
+                        <label for="choix1"> Combien de but a marqué Ronaldinho durant toute sa carrière ?</label>
+                        <select name="choix1" id="choix1">
+                            <option value="">Choisir</option>
+                            <option value="50">50</option>
+                            <option value="65">65</option>
+                            <option value="90">90</option> <!--bonne réponse-->
+                            <option value="120">120</option>
+                            <option value="15">15</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="choix2">Quel est le premier club dans lequel a joué Zidane ?</label>
+                        <select id="choix2">
+                            <option value="">Choisir</option>
+                            <option value="Real">Real Madrid</option>
+                            <option value="FC Girondin">FC Girondin</option>
+                            <option value="Juventus">Juventus FC</option>
+                            <option value="AS Cannes">AS Cannes</option> <!--bonne réponse-->
+                            <option value="AS Monaco">AS Monaco</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="choix3">En 98 Messi a était diagnostiqué de quelle maladie ?</label>
+                        <select id="choix3">
+                            <option value="">Choisir</option>
+                            <option value="déficit">déficit d'hormones de croissance</option> <!--bonne réponse-->
+                            <option value="cancer">cancer du foie</option>
+                            <option value="entorse">entorse à la cheville</option>
+                            <option value="ligaments croisés">ligaments croisés</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="choix4">Dans quelle ville est né Cristiano Ronaldo ?</label>
+                        <select id="choix4">
+                            <option value="">Choisir</option>
+                            <option value="Porto">Porto</option>
+                            <option value="Lisbonne">Lisbonne</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="San Antonio">San Antonio</option> <!--bonne réponse-->
+                            <option value="Viana do Castelo">Viana do Castelo</option>
+                        </select>
+                    </li>
+                </ul>
+
+            </fieldset>
+
+            <fieldset class="vraifaux">
+                <legend>VRAI ou FAUX</legend>
+
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Affirmations :</th>
+                        <th>Vrai</th>
+                        <th>Faux</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong> De 2004 à 2021 Messi a joué au FC Barcelone :</strong></td>
+                        <td>
+                            <div class="vrai">
+                                <input id="vrai1" type="radio" name="Q1" value="vrai"> <!--VRAI-->
+                            </div>
+                        </td>
+                        <td>
+                            <div class="faux">
+                                <input id="faux1" type="radio" name="Q1" value="faux">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong> Zidane a marqué environ 156 buts durant toute sa carrière : </strong></td>
+                        <td>
+                            <div class="vrai">
+                                <input id="vrai2" type="radio" name="Q2" value="vrai"> <!--VRAI-->
+                            </div>
+                        </td>
+                        <td>
+                            <div class="faux">
+                                <input id="faux2" type="radio" name="Q2" value="faux">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong> Cristiano Ronaldo a remporté plus de ballon d'or que Lionel Messi : </strong></td>
+                        <td>
+                            <div class="vrai">
+                                <input id="vrai3" type="radio" name="Q3" value="vrai">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="faux">
+                                <input id="faux3" type="radio" name="Q3" value="faux"> <!--FAUX-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong> Ronaldinho a joué dans 6 clubs différents : </strong></td>
+                        <td>
+                            <div class="vrai">
+                                <input id="vrai4" type="radio" name="Q4" value="vrai">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="faux">
+                                <input id="faux4" type="radio" name="Q4" value="faux"><!--FAUX-->
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong> Zinédine Zidane n'a entrainé que le Real Madrid : </strong></td>
+                        <td>
+                            <div class="vrai">
+                                <input id="vrai5" type="radio" name="Q5" value="vrai"> <!--VRAI-->
+                            </div>
+                        </td>
+                        <td>
+                            <div class="faux">
+                                <input id="faux5" type="radio" name="Q5" value="faux">
+                            </div>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+            </fieldset>
+
+
+            <fieldset class="avis">
+                <legend>Comment avez-vous trouvé notre quizz ?</legend>
+
+                <div class="qualite">
+                    <input type="radio" name="avis" value="tresmauvais" id="tresmauvais"/>
+                    <label for="tresmauvais">Très mauvais</label>
+
+                    <input type="radio" name="avis" value="mauvais" id="mauvais"/>
+                    <label for="mauvais">Mauvais</label>
+
+                    <input type="radio" name="avis" value="moyen" id="moyen"/>
+                    <label for="moyen">Moyen</label>
+
+                    <input type="radio" name="avis" value="bien" id="bien"/>
+                    <label for="bien">Bien</label>
+
+                    <input type="radio" name="avis" value="tresbien" id="tresbien"/>
+                    <label for="tresbien">Très bien</label>
+                </div>
+
+
+            </fieldset>
+
+
+            <fieldset class="gestion">
+                <legend>Gestion du formulaire</legend>
+
+                <div>
+                    <button id="effacer" type="button" onclick="resetForm()"> Réinitialiser</button>
+                    <button id="envoyer" type="submit">Envoyer</button>
+                    <p style="color: #b40000; font-size: 15px; font-weight: 600" id="erreur"></p>
+
+
+                </div>
+
+            </fieldset>
+        </form>
+
+
+    </article>
+</div>
+
+
+<footer>
+    <div class="footer-content">
+        <h3>MyGoal</h3>
+        <p>Classé n°1 des sites d'actualité de football européen <br/>
+            100% fiable</p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2022 myGoal. designed by <span>Jugurta et Hietem</span></p>
+    </div>
+</footer>
+
+
+</body>
+</html>

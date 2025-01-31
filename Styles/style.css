@@ -1,0 +1,291 @@
+/*general*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+h1{
+	color: #fff;
+    text-align: center;
+	font-size: 3em;
+    font-family: 'Calibri', sans-serif;
+
+ }
+ h2{
+	 color: #fff;
+	 margin-top: 20px;
+     text-align: center;
+     font-size: 20px;
+ }
+
+
+
+#imageindex{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+.main{
+		background-color: #11ffee00;
+		color: #fff;
+		padding-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		width: 90%;
+
+	
+}
+
+.main img{
+	margin-top: 20px;
+}
+
+.main h2{
+	margin-top: 20px;
+}
+
+.main h2 a{
+	text-decoration: none;
+	color: #99cc99;
+	text-transform: uppercase;
+}
+
+.main h3{
+	color: #fff;
+	font-size: 17px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.main h3 a{
+	text-decoration: none;
+	color: #99cc99;
+	text-transform: uppercase;
+}
+
+.bloc {
+	position: relative;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+}
+
+.bloc video {
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	z-index: -100;
+	transform: translate(-50%, -50%);
+}
+
+.bloc:before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: #0000009d;
+	z-index: -99;
+}
+#fond{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+/*Fin general*/
+
+/*debut bar navigation*/
+
+
+.navbar{
+    width: 100%;
+    padding: 28px 0;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.logo{
+    width: 85px;
+    cursor: pointer;
+	margin-left: 77px;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px ;
+    padding: 8px 15px;
+    margin-left: 55px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+	font-size: 1.2rem;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #76c893;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+
+}
+.navbar span{
+	font-size: 1.1rem;
+	color: #E7BB08;
+}
+/*fin bar navigation*/
+
+
+
+/*Debut card*/
+.Cards{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	color: #000;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+.Cards h3{
+	color: #000;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+.card{
+	background: #F0F0F0;
+	width: 270px;
+	margin: 10px;
+	border-radius: 15px;
+}
+.card-image{
+	height: 170px;
+	margin-bottom: 15px;
+	background-size: cover;
+	border-radius: 15px 15px 0 0;
+}
+.card-1{
+	background-image: url('../Images/messi2.png');
+}
+.card-2{
+	background-image: url('../Images/zidane2.png');
+}
+.card-3{
+	background-image: url('../Images/ronaldinho2.png');
+}
+.card-4{
+	background-image: url('../Images/cr7.png');
+}
+.card p{
+	padding: 10px;
+	text-align: center;
+}
+.card a{
+	background-color: #EF4A4A;
+	color: #fff;
+	padding: 15px 20px;
+	display: block;
+	text-align: center;
+	margin: 20px 50px;
+	text-decoration: none;
+}
+.card:hover{
+	background-color: #D8D8D8;
+}
+/*Fin card*/
+
+/*footer*/
+footer{
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #111;
+	height: auto;
+	width: 100%;
+	font-family: "Open Sans";
+	padding: 0px;
+	color: #fff;
+}
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content h3{
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 600;
+	text-transform: capitalize;
+	line-height: 3rem;
+	margin-top: 20px;
+}
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 12px;
+}
+
+
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 1.5rem 0;
+}
+.socials li{
+	margin: 0 10px;
+}
+.socials a{
+	text-decoration: none;
+	color: #fff;
+}
+.socials a i{
+	font-size: 1.1rem;
+}
+.socials a:hover i{
+	color: aqua;
+}
+.footer-bottom{
+	background: #000;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.footer-bottom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+/*fin footer*/
+

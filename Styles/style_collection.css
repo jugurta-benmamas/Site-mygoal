@@ -1,0 +1,356 @@
+/*general*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(240, 238, 238);
+}
+
+header {
+    background: rgba(0, 1, 7, 0.5);
+    height: 100vh;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/*fin general*/
+
+/*barre de navigation*/
+.navbar {
+    width: 100%;
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 85px;
+    cursor: pointer;
+    margin-left: 77px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0px 50px 0px 55px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #76c893;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.navbar span {
+    font-size: 1.1rem;
+    color: #E7BB08;
+}
+
+/*fin barre de navigation*/
+
+/*personnal data*/
+
+.personaldata {
+    margin-left: 1em;
+    color: #fff;
+    font-size: 3vh;
+
+}
+
+.personaldata h1 {
+    color: #fff;
+    font-size: 2em;
+}
+
+.personaldata img {
+    border-radius: 100px;
+    width: 6em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.personaldata span {
+    color: #4caf50;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.personaldata p {
+    padding-bottom: 6px;
+}
+
+.stats {
+    float: right;
+    margin-right: 1em;
+    margin-top: 1em;
+}
+
+
+/*fin personal data*/
+
+/*biographie*/
+
+.biographie {
+    margin-top: 140px;
+}
+
+.total {
+    display: flex;
+}
+
+.right {
+    width: 65%;
+    float: right;
+}
+
+.right h2 {
+    font-size: 50px;
+    margin-left: 80px;
+    text-decoration: underline #34a0a4;
+}
+
+.right p {
+    font-size: 1.2vw;
+    margin-top: 25px;
+    line-height: 45px;
+}
+
+.right p span {
+    color: #52b69a;
+    font-weight: 800;
+}
+
+.right h3 {
+    font-size: 35px;
+    margin-top: 25px;
+    text-decoration: underline #34a0a4;
+}
+
+.left {
+    padding: 50px;
+}
+
+/*fin biographie*/
+
+/*Palmares*/
+
+.palmares {
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.palmares h2 {
+    font-size: 50px;
+    text-decoration: underline #34a0a4;
+    text-align: center;
+}
+
+.title_table {
+    font-size: 1.5em;
+    padding: 4px;
+    background-color: #52b69a;
+    color: #000;
+    border: 2px solid rgb(223, 223, 223);
+
+}
+
+
+table {
+    background: #f9f9f9;
+    color: #000;
+    font-size: 0.9em;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-spacing: 5px;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.title_thead {
+    background-color: #34a0a4;
+    color: #fff;
+    text-align: left;
+}
+
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #99cc99;
+}
+
+.total1 {
+    display: flex;
+}
+
+.left1 {
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.right1 {
+    margin-left: 160px;
+    margin-top: 40px;
+}
+
+/*fin palmares*/
+
+/*footer*/
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding: 0px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/*fin footer*/
+
+/*precedent et suivant*/
+.next {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.prev {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+
+.next:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.prev:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.next {
+    background-color: #4caf50;
+    color: #fff;
+    float: right;
+    margin: 20px;
+}
+
+.prev {
+    background-color: #f1f1f1;
+    color: #000;
+    margin: 20px;
+}

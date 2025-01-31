@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bestfootballplayer SYSTEM "bestplayer.dtd">
+<bestfootballplayer gender="male" stillplaying="yes" club="psg">
+    <personaldata>
+        <name>Messi Cuccitini</name>
+        <firstname>Lionel Andrés</firstname>
+        <pseudo>Leo Messi</pseudo>
+        <birth year="1987" month="6" day="24" />
+        <nationality>
+            <nationality1>Argentin</nationality1>
+            <nationality2>Espagnol</nationality2>
+        </nationality>
+        <sportsnationality>Argentin</sportsnationality>
+        <position>Attaquant</position>
+        <bestfoot foot="left" />
+    </personaldata>
+    <biography>
+        <youth>
+
+        </youth>
+        <firstclub year="2000" club="FC Barcelone"></firstclub>
+    </biography>
+    <palmares>
+        <asaplayer>
+            <squadplayer>
+                <squadname id="FC Barcelone">FC Barcelone</squadname>
+                <year year="2003-2004"/>
+                <match></match>
+                <goal></goal>
+                <trophy></trophy>
+            </squadplayer>
+            <squadplayer>
+                <squadname id="Girondins de Bordeaux"></squadname>
+                <year year=""/>
+                <match></match>
+                <goal></goal>
+                <victory year=""></victory>
+            </squadplayer>
+            <squadplayer>
+            <squadname id=""></squadname>
+            <year year=""/>
+            <match></match>
+            <goal></goal>
+            <victory year=""></victory>
+        </squadplayer>
+        </asaplayer>
+        <asacoach>
+            <squadcoach>
+                <squadname id=""></squadname>
+                <championship nbtimes="0"></championship>
+                <victory year="" classement=""/>
+                <victory year="" classement=""/>
+                <championship nbtimes="0"></championship>
+                <victory year="" classement=""/>
+                <victory year="" classement=""/>
+                <championship nbtimes="0"></championship>
+                <victory year="" classement=""/>
+                <victory year="" classement=""/>
+                <victory year="" classement=""/>
+                <championship nbtimes="0"></championship>
+                <victory year="" classement=""/>
+                <victory year="" classement=""/>
+                <championship nbtimes="0"></championship>
+                <victory year="" classement=""/>
+                <victory year="" classement=""/>
+            </squadcoach>
+        </asacoach>
+    </palmares>
+    <illustrations>
+        <img src="" alt="" />
+    </illustrations>
+
+</bestfootballplayer>

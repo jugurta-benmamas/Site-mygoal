@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bestfootballplayer SYSTEM "bestplayer.dtd">
+<bestfootballplayer gender="male" stillplaying="no">
+    <personaldata>
+        <name>Zidane</name>
+        <firstname>Zinédine</firstname>
+        <pseudo>Zizou</pseudo>
+        <birth year="1972" month="6" day="23" />
+        <nationality>
+            <nationality1>Français</nationality1>
+            <nationality2>Algérien</nationality2>
+        </nationality>
+        <sportsnationality>Français</sportsnationality>
+        <position>Millieu offensif</position>
+        <bestfoot foot="right" />
+    </personaldata>
+    <biography>
+        <youth>Depuis la fin des années 1960,la famille Zidane habite dans la cité de La Castellane quartier défavorisé de la ville phocéenne
+            où vivent environ 6 000 habitants issus de l'immigration : Maghrébins, noirs africains, espagnols et des comoriens.
+            Cette famille de cinq enfants habite dans un appartement de la place Tartane, près du supermarché Casino où travaille Smaïl Zidane, le père de Zinédine.
+            C'est sur cette place que « Yazid » ou « Yaz », comme l'appelle son entourage, fait ses premiers pas avec le ballon rond.Avec ses frères et ses amis du quartier,
+            le jeune Zidane passe des heures sur l'esplanade en face de son immeuble à jouer au football...</youth>
+        <firstclub year="1987" club="AS Cannes">Zinédine Zidane intègre en 1987, à l'âge de quinze ans,
+            le centre de formation cannois sous les ordres de Guy Lacombe.À l'AS Cannes, Zidane rencontre de nouveaux entraîneurs et les professionnels de l'équipe première...</firstclub>
+    </biography>
+    <palmares>
+        <asaplayer>
+            <squadplayer>
+                <squadname id="As Cannes">AS Cannes</squadname>
+                <year year="1998-1992"/>
+                <match>71 matchs</match>
+                <goal>6 buts</goal>
+                <trophy>Aucun trophée remporté</trophy>
+            </squadplayer>
+            <squadplayer>
+                <squadname id="Girondins de Bordeaux">Girondins de Bordeaux</squadname>
+                <year year="1992"/>
+                <match>176 matchs</match>
+                <goal>39 buts</goal>
+                <victory year="1995">Son premier titre avec la formation bordelaise est la coupe Intertoto</victory>
+            </squadplayer>
+            <squadplayer>
+            <squadname id="Juventus FC">Juventus FC</squadname>
+            <year year="1996"/>
+            <match>214 matchs</match>
+            <goal>31 buts</goal>
+            <victory year="1997-1998">Remporte deux titres de champion d'Italie, appelé Scudetto</victory>
+        </squadplayer>
+        </asaplayer>
+        <asacoach>
+            <squadcoach>
+                <squadname id="Real Madrid">Real Madrid</squadname>
+                <championship nbtimes="2">Championnat d'Espagne</championship>
+                <victory year="2017" classement="Champion"/>
+                <victory year="2020" classement="Champion"/>
+                <championship nbtimes="2">Supercoupe d'Espagne</championship>
+                <victory year="2017" classement="Vainqueur"/>
+                <victory year="2020" classement="Vainqueur"/>
+                <championship nbtimes="3">Ligue des champions</championship>
+                <victory year="2016" classement="Vainqueur"/>
+                <victory year="2017" classement="Vainqueur"/>
+                <victory year="2018" classement="Vainqueur"/>
+                <championship nbtimes="2">Supercoupe de l'UEFA</championship>
+                <victory year="2016" classement="Vainqueur"/>
+                <victory year="2017" classement="Vainqueur"/>
+                <championship nbtimes="2">Coupe du monde des clubs de la FIFA</championship>
+                <victory year="2016" classement="Vainqueur"/>
+                <victory year="2017" classement="Vainqueur"/>
+            </squadcoach>
+        </asacoach>
+    </palmares>
+    <illustrations>
+        <img src="https://assets-fr.imgfoot.com/zinedine-zidane-60586c1fc711d.jpg" alt="zidane" />
+    </illustrations>
+
+</bestfootballplayer>

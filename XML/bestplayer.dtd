@@ -1,0 +1,231 @@
+<!ENTITY % monthval "(1|2|3|4|5|6|7|8|9|10|11|12)">
+<!ENTITY % dayval
+	 "(1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31)">
+<!ENTITY % year "CDATA"> 
+<!ENTITY % amp  "&#38;">
+<!ENTITY % bestfoot "(right|left)">
+<!ENTITY % nbtimes "(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40)">
+
+<!ENTITY % heading "h1|h2|h3|h4|h5|h6">
+<!ENTITY % lists "ul | ol | dl">
+<!ENTITY % blocktext "pre | hr | blockquote | address">
+<!ENTITY % block "p | %heading; | div | %lists; | %blocktext; | fieldset | table">
+<!ENTITY % Block "(%block; | form | #PCDATA;)*">
+<!ENTITY % inline "img | a | highlight">
+<!ENTITY % datainline "(#PCDATA | %inline; )*">
+<!ENTITY % datainlineul "(#PCDATA | p | %inline; | ul)*">
+<!ENTITY % Flow "(#PCDATA | %block; | form | %inline; | %misc;)*">
+
+<!ENTITY % coreattrs
+	 "id       ID      #IMPLIED
+	  class    CDATA   #IMPLIED
+	  title    CDATA   #IMPLIED"
+>
+
+<!ENTITY % URI "CDATA">
+ <!-- a Uniform Resource Identifier, see [RFC2396] -->
+
+<!ENTITY % Length "CDATA">
+<!-- nn for pixels or nn% for percentage length -->
+
+
+<!ENTITY % Text "CDATA">
+    <!-- used for titles etc. -->
+
+    
+<!ELEMENT bestfootballplayer (personaldata,biography,palmares,illustrations?) >
+<!ATTLIST bestfootballplayer
+	  %coreattrs;
+	  club    %Text;   #IMPLIED
+	  gender    (female|male)  #REQUIRED
+	  stillplaying     (yes|no)   #REQUIRED>
+
+<!ELEMENT personaldata (name+,firstname+,pseudo,birth,nationality,sportsnationality,position,bestfoot?)>
+<!ATTLIST personaldata
+	  %coreattrs;>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+	  %coreattrs;>
+
+<!ELEMENT firstname (#PCDATA)>
+<!ATTLIST firstname
+	  %coreattrs;>
+
+<!ELEMENT pseudo (#PCDATA)>
+<!ATTLIST pseudo
+	  %coreattrs;>
+
+<!ELEMENT birth EMPTY>
+<!ATTLIST birth
+	  %coreattrs;
+	  year     %year;       #REQUIRED
+	  month    %monthval;   #IMPLIED
+	  day      %dayval;     #IMPLIED
+	  >
+
+<!ELEMENT nationality (nationality1,nationality2?)>
+<!ATTLIST nationality 
+	  %coreattrs;>
+
+<!ELEMENT nationality1 (#PCDATA)>
+<!ATTLIST nationality1
+%coreattrs;>
+
+<!ELEMENT nationality2 (#PCDATA)>
+<!ATTLIST nationality2
+%coreattrs;>
+
+
+<!ELEMENT sportsnationality (#PCDATA)>
+<!ATTLIST sportsnationality
+	  %coreattrs;>
+
+<!ELEMENT position (#PCDATA)>
+<!ATTLIST position
+	  %coreattrs;
+	  >
+
+<!ELEMENT bestfoot EMPTY>
+<!ATTLIST bestfoot
+	  %coreattrs;
+	  foot %bestfoot; #REQUIRED>
+
+
+<!ELEMENT biography (youth,firstclub*)>
+<!ATTLIST biography
+	  %coreattrs;
+	  >
+
+<!ELEMENT youth (#PCDATA)>
+<!ATTLIST youth
+	  %coreattrs;
+	  >
+
+<!ELEMENT firstclub (#PCDATA)>
+<!ATTLIST firstclub
+	  %coreattrs;
+	  year %year; #REQUIRED
+	  club %Text; #REQUIRED>
+
+
+<!ELEMENT palmares (asaplayer,asacoach?)>
+<!ATTLIST palmares
+	  %coreattrs;
+	  >
+	  
+
+<!ELEMENT asaplayer (squadplayer)*>
+<!ATTLIST asaplayer
+	  %coreattrs;
+	  >
+
+<!ELEMENT asacoach (squadcoach)>
+<!ATTLIST asacoach
+	  %coreattrs;
+	  >
+
+<!ELEMENT squadplayer (#PCDATA,squadname,year,match,goal,decisivepass,victory,trophy)*>
+<!ATTLIST squadplayer
+		%coreattrs;
+		>
+
+<!ELEMENT squadcoach (#PCDATA,squadname,championship,victory)*>
+<!ATTLIST squadcoach
+	  %coreattrs;
+	  >
+
+<!ELEMENT squadname (#PCDATA)>
+<!ATTLIST squadname
+		%coreattrs;
+		id ID #REQUIRED
+		>
+
+
+<!ELEMENT year EMPTY>
+<!ATTLIST year
+	  %coreattrs;
+		year %year; #REQUIRED
+		id ID #IMPLIED
+	  >
+
+<!ELEMENT championship (#PCDATA)>
+<!ATTLIST championship	
+	  %coreattrs;
+		nbtimes %nbtimes; #IMPLIED
+	  >
+	  
+<!ELEMENT victory EMPTY>
+<!ATTLIST victory	
+	  %coreattrs;
+		year %year; #IMPLIED
+		classement %Text; #IMPLIED
+		>
+
+
+<!ELEMENT match (#PCDATA)>
+<!ATTLIST match
+	  %coreattrs;
+	  >
+
+<!ELEMENT goal (#PCDATA)>
+<!ATTLIST goal
+	  %coreattrs;
+	  >
+
+<!ELEMENT decisivepass (#PCDATA)>
+<!ATTLIST decisivepass
+	  %coreattrs;
+	  >
+
+<!ELEMENT trophy (#PCDATA)*>
+<!ATTLIST trophy
+	  %coreattrs;
+	  >
+
+
+<!ELEMENT ul (li)+>
+
+<!ELEMENT li %datainlineul;>
+<!ATTLIST li
+		%coreattrs;
+		begin %year; #IMPLIED
+		end   %year; #IMPLIED
+		year  %year; #IMPLIED
+		>
+
+<!ELEMENT illustrations (img)+>
+<!ATTLIST illustrations
+		%coreattrs;
+		>
+
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+		%coreattrs;
+		src         %URI; #REQUIRED
+		alt         %Text; #REQUIRED
+		longdesc    %URI;          #IMPLIED
+		height      %Length;       #IMPLIED
+		width       %Length;       #IMPLIED
+		>
+
+
+
+<!ELEMENT a (#PCDATA)*>
+<!ATTLIST a
+		%coreattrs;
+		href        %URI;          #IMPLIED
+		>
+
+
+<!ELEMENT highlight %datainline;>
+<!ATTLIST highlight
+		%coreattrs;
+		>
+
+
+<!ELEMENT p %datainline;>
+<!ATTLIST p
+		%coreattrs;
+		>
+

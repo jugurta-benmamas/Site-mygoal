@@ -1,0 +1,439 @@
+.bloc {
+    position: relative;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
+
+.bloc video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+.bloc:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #0000009d;
+    z-index: -99;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+hr {
+
+    border-top: 1px solid #000000;
+    width: 100%;
+
+}
+
+body {
+    background-image: url("../Images/background black fade.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+.main {
+    margin: 20px 80px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #17202A;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*navbar*/
+.enhaut {
+    text-align: right;
+}
+
+.enhaut a {
+    display: block;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 85px;
+    cursor: pointer;
+    margin-left: 77px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    padding: 8px 15px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #76c893;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.navbar span {
+    font-size: 1.1rem;
+    color: #E7BB08;
+}
+
+/*fin navbar*/
+
+/*Formulaire Identity*/
+.identity {
+    width: 400px;
+    padding: 20px 100px;
+    background: #76a98e;
+    text-align: center;
+    margin: 45px auto;
+    border-radius: 10px;
+    border: 2px solid #3d694a;
+}
+
+p:first-of-type {
+    margin-top: 25px;
+}
+
+.identity p {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.identity input {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid #3d694a;
+    padding: 14px 40px;
+    outline: none;
+    color: #000;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.identity legend {
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid #3d694a;
+    background-color: rgb(240, 238, 238);
+    padding-left: inherit;
+    padding-right: inherit;
+}
+
+/*Fin du Formulaire Identity*/
+
+
+/*Formulaire choix multiple*/
+.choixmultiple {
+    width: 647px;
+    padding: 10px 5em;
+    background: #76a98e;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 2px solid #3d694a;
+}
+
+.choixmultiple li {
+    padding: 10px;
+    color: #000;
+    list-style: none;
+}
+
+.choixmultiple select {
+    background: none;
+    border: 2px solid #3d694a;
+    padding: 8px;
+    outline: none;
+    color: #000;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.choixmultiple select option {
+    background: #fff;
+    text-align: center;
+    color: #413838;
+    cursor: pointer;
+}
+
+.choixmultiple legend {
+    border: 2px solid #3d694a;
+    background-color: rgb(240, 238, 238);
+    padding-left: inherit;
+    padding-right: inherit;
+    text-align: center;
+}
+
+/*Fin du Formulaire choix multiple*/
+
+/*Formulaire choix multiple*/
+.vraifaux {
+    width: 670px;
+    padding: 10px 10em;
+    background: #76a98e;
+    margin: 100px auto;
+    border-radius: 10px;
+    border: 2px solid #3d694a;
+}
+
+#effacer {
+    margin-top: 10px;
+}
+
+#envoyer {
+    margin-top: 10px;
+    margin-left: 159px;
+}
+
+.vraifaux legend {
+    border: 2px solid #3d694a;
+    background-color: rgb(240, 238, 238);
+    padding-left: inherit;
+    padding-right: inherit;
+    text-align: center;
+}
+
+/*Tableau*/
+table {
+    border-spacing: 10px 15px;
+}
+
+table th {
+    text-decoration: underline;
+}
+
+/*fin tableau*/
+/*Fin du Formulaire choix multiple*/
+
+/*Formulaire choix multiple*/
+.avis {
+    width: 647px;
+    padding: 10px 10em;
+    background: #76a98e;
+    margin: 100px auto;
+    border-radius: 10px;
+    border: 2px solid #3d694a;
+}
+
+.avis li {
+    padding: 10px;
+    color: #fff;
+}
+
+.avis select {
+    background: none;
+    border: 2px solid #fff;
+    padding: 8px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.avis select option {
+    background: #fff;
+    text-align: center;
+    color: #413838;
+    cursor: pointer;
+}
+
+.avis legend {
+    border: 2px solid #3d694a;
+    background-color: rgb(240, 238, 238);
+    padding-left: inherit;
+    padding-right: inherit;
+    text-align: center;
+}
+
+/*Fin du Formulaire choix multiple*/
+
+/*Formulaire Avis*/
+
+.qualite {
+    text-align: center;
+}
+
+.qualite label {
+    padding-right: 10px;
+    text-align: center;
+}
+
+/*Fin du Formulaire avis*/
+
+/*Formulaire gestion*/
+.gestion {
+    width: 400px;
+    padding: 20px 100px;
+    background: #76a98e;
+    text-align: center;
+    margin: 100px auto;
+    border-radius: 10px;
+    border: 2px solid #3d694a;
+}
+
+.gestion button {
+    border-radius: 20px;
+    border: 2px solid #3d694a;
+    padding: 10px;
+}
+
+.gestion button:hover {
+    background: rgba(208, 208, 208, 0.71);
+}
+
+.gestion legend {
+    border: 2px solid #3d694a;
+    background-color: rgb(240, 238, 238);
+    padding-left: inherit;
+    padding-right: inherit;
+    text-align: center;
+}
+
+#erreur {
+    margin-top: 20px;
+}
+
+/*Fin du Formulaire gestion*/
+
+
+/*footer*/
+footer {
+    bottom: 0;
+
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding: 0px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/*fin footer*/
+

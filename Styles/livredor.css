@@ -1,0 +1,109 @@
+*{
+
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/*barre de navigation*/
+.navbar {
+    width: 100%;
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    width: 85px;
+    cursor: pointer;
+    margin-left: 77px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0px 50px 0px 55px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #76c893;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.navbar span {
+    font-size: 1.1rem;
+    color: #E7BB08;
+}
+
+/*fin barre de navigation*/
+
+/*commentaire*/
+label, textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.commentaire{
+    margin-left: 50px;
+}
+
+#pseudo{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+/*fin commentaire*/
+
+#erreur {
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 20px;
+    border: 2px solid #3d694a;
+    padding: 10px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: rgba(208, 208, 208, 0.71);
+}
